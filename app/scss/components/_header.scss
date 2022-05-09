@@ -39,6 +39,10 @@
 
     &:active {
       color: $green-200;
+
+      path {
+        fill: $green-200;
+      }
     }
   }
 
