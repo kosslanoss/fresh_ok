@@ -45,11 +45,13 @@ button,
 textarea,
 select {
   font: inherit;
+  outline: transparent;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  outline: transparent;
 }
 
 address {
