@@ -170,7 +170,8 @@
                     d="M9.02099 16.4718C4.47623 16.4718 0.778809 12.7772 0.778809 8.23588C0.778809 3.69459 4.47623 0 9.02099 0C13.5657 0 17.2632 3.69459 17.2632 8.23588C17.2632 12.7772 13.5657 16.4718 9.02099 16.4718ZM9.02099 1.5613C5.33779 1.5613 2.34131 4.5555 2.34131 8.23588C2.34131 11.9163 5.33779 14.9105 9.02099 14.9105C12.7042 14.9105 15.7007 11.9163 15.7007 8.23588C15.7007 4.5555 12.7042 1.5613 9.02099 1.5613ZM20.55 19.7713C20.8551 19.4665 20.8551 18.9722 20.55 18.6673L17.0539 15.1739C16.7488 14.869 16.2541 14.869 15.949 15.1739C15.6439 15.4788 15.6439 15.9731 15.949 16.2779L19.4451 19.7713C19.5977 19.9238 19.7976 20 19.9976 20C20.1975 20 20.3974 19.9238 20.55 19.7713Z"
                     fill="#31352B" />
                 </svg>
-                <input class="header-bottom__search-input" type="text" name="search" placeholder="Знайти у магазині ...">
+                <input class="header-bottom__search-input" type="text" name="search"
+                  placeholder="Знайти у магазині ...">
               </label>
               <button class="header-bottom__search-btn" type="button">Знайти</button>
             </form>
@@ -212,13 +213,136 @@
   </header>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
+    <div class="footer-top">
+      <div class="container">
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo.svg" alt="логотип" width="200" height="60">
         </a>
+        <div class="footer-top__wrapper">
+          <div class="footer-top__submit">
+            <p class="footer-top__text">
+              Слідкуйте за нашими акціями
+            </p>
+            <form class="footer-top__form" action="#">
+              <label class="footer-top__label">
+                <input class="footer-top__input" type="email" name="submit" placeholder="email@email.com" required>
+              </label>
+              <button class="footer-top__btn" type="submit">Підписатися</button>
+            </form>
+          </div>
+          <div class="footer-top__menu">
+            <ul class="footer-top__menu-list">
+              <li class="footer-top__menu-item">
+                <a class="footer-top__menu-link" href="#">
+                  Про нас
+                </a>
+              </li>
+              <li class="footer-top__menu-item">
+                <a class="footer-top__menu-link" href="#">
+                  Оплата і доставка
+                </a>
+              </li>
+              <li class="footer-top__menu-item">
+                <a class="footer-top__menu-link" href="#">
+                  Відгуки
+                </a>
+              </li>
+              <li class="footer-top__menu-item">
+                <a class="footer-top__menu-link" href="#">
+                  Контакти
+                </a>
+              </li>
+              <li class="footer-top__menu-item">
+                <a class="footer-top__menu-link" href="#">
+                  Вакансії
+                </a>
+              </li>
+              <li class="footer-top__menu-item">
+                <a class="footer-top__menu-link" href="#">
+                  Новини
+                </a>
+              </li>
+              <li class="footer-top__menu-item">
+                <a class="footer-top__menu-link" href="#">
+                  Публічна оферта
+                </a>
+              </li>
+              <li class="footer-top__menu-item">
+                <a class="footer-top__menu-link" href="#">
+                  Акції
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-top__contacts">
+            <address>
+              <a class="footer-top__phone" href="tel:+02838388393">
+                Гаряча лінія +02 83 838 8393
+              </a>
+              <p class="footer-top__address">
+                New York, 342 Oxford Street
+              </p>
+            </address>
+            <ul class="footer-top__social-list">
+              <li class="footer-top__social-item">
+                <a class="footer-top__social-link" href="#">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                      d="M21.3293 5.31333H24.2507V0.225333C23.7467 0.156 22.0133 0 19.9947 0C15.7827 0 12.8973 2.64933 12.8973 7.51867V12H8.24933V17.688H12.8973V32H18.596V17.6893H23.056L23.764 12.0013H18.5947V8.08267C18.596 6.43867 19.0387 5.31333 21.3293 5.31333Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-top__social-item">
+                <a class="footer-top__social-link" href="#">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                      d="M31.292 7.90543L31.332 8.16677C30.9453 6.79477 29.9013 5.7361 28.5747 5.35077L28.5467 5.3441C26.052 4.66677 16.0133 4.66677 16.0133 4.66677C16.0133 4.66677 6 4.65343 3.48 5.3441C2.128 5.7361 1.08266 6.79477 0.702662 8.13877L0.695996 8.16677C-0.236004 13.0348 -0.242671 18.8841 0.737329 24.0961L0.695996 23.8321C1.08266 25.2041 2.12666 26.2628 3.45333 26.6481L3.48133 26.6548C5.97333 27.3334 16.0147 27.3334 16.0147 27.3334C16.0147 27.3334 26.0267 27.3334 28.548 26.6548C29.9013 26.2628 30.9467 25.2041 31.3267 23.8601L31.3333 23.8321C31.7573 21.5681 32 18.9628 32 16.3014C32 16.2041 32 16.1054 31.9987 16.0068C32 15.9161 32 15.8081 32 15.7001C32 13.0374 31.7573 10.4321 31.292 7.90543ZM12.8107 20.8681V11.1441L21.1653 16.0134L12.8107 20.8681Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-top__social-item">
+                <a class="footer-top__social-link" href="#">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                      d="M12.556 20.2413L12.0267 27.6867C12.784 27.6867 13.112 27.3613 13.5053 26.9707L17.056 23.5773L24.4133 28.9653C25.7626 29.7173 26.7133 29.3213 27.0773 27.724L31.9066 5.09468L31.908 5.09335C32.336 3.09868 31.1866 2.31868 29.872 2.80801L1.48533 13.676C-0.452007 14.428 -0.422674 15.508 1.15599 15.9973L8.41332 18.2547L25.2706 7.70668C26.064 7.18135 26.7853 7.47201 26.192 7.99735L12.556 20.2413Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-top__social-item">
+                <a class="footer-top__social-link" href="#">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path
+                      d="M16.0053 7.78406C11.468 7.78406 7.79468 11.4614 7.79468 15.9947C7.79468 20.5321 11.472 24.2054 16.0053 24.2054C20.5427 24.2054 24.216 20.5281 24.216 15.9947C24.216 11.4574 20.5387 7.78406 16.0053 7.78406ZM16.0053 21.3241C13.06 21.3241 10.676 18.9387 10.676 15.9947C10.676 13.0507 13.0613 10.6654 16.0053 10.6654C18.9493 10.6654 21.3347 13.0507 21.3347 15.9947C21.336 18.9387 18.9507 21.3241 16.0053 21.3241Z"
+                      fill="white" />
+                    <path
+                      d="M22.5973 0.101248C19.6533 -0.0360854 12.3613 -0.0294187 9.41467 0.101248C6.82533 0.222581 4.54133 0.847914 2.7 2.68925C-0.377336 5.76658 0.0159978 9.91325 0.0159978 15.9946C0.0159978 22.2186 -0.330669 26.2692 2.7 29.2999C5.78933 32.3879 9.996 31.9839 16.0053 31.9839C22.1707 31.9839 24.2987 31.9879 26.4787 31.1439C29.4427 29.9932 31.68 27.3439 31.8987 22.5852C32.0373 19.6399 32.0293 12.3492 31.8987 9.40258C31.6347 3.78525 28.62 0.378581 22.5973 0.101248ZM27.2573 27.2639C25.24 29.2812 22.4413 29.1012 15.9667 29.1012C9.3 29.1012 6.62666 29.1999 4.676 27.2439C2.42933 25.0079 2.836 21.4172 2.836 15.9732C2.836 8.60658 2.08 3.30125 9.47333 2.92258C11.172 2.86258 11.672 2.84258 15.948 2.84258L16.008 2.88258C23.1133 2.88258 28.688 2.13858 29.0227 9.53058C29.0987 11.2172 29.116 11.7239 29.116 15.9932C29.1147 22.5826 29.24 25.2719 27.2573 27.2639Z"
+                      fill="white" />
+                    <path
+                      d="M24.5413 9.37859C25.601 9.37859 26.46 8.51957 26.46 7.45992C26.46 6.40027 25.601 5.54126 24.5413 5.54126C23.4817 5.54126 22.6227 6.40027 22.6227 7.45992C22.6227 8.51957 23.4817 9.37859 24.5413 9.37859Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="footer-bottom"></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom__wrapper">
+          <span class="footer-bottom__copy">
+            © 2021 ФРЕШОК
+          </span>
+          <div class="footer-bottom__payment">
+            <span class="footer-bottom__payment-visa"></span>
+            <span class="footer-bottom__payment-mastercard"></span>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 

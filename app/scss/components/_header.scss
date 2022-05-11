@@ -89,12 +89,18 @@
     align-items: center;
     justify-content: space-around;
     color: $green-900;
+    transition: background-color 0.3s, color 0.3s;
+    
+    &:focus {
+      background-color: $green-200;
+      color: $dark-900;
+    }
   }
 
   &__catalog-btn--active {
     background-color: $green-200;
     border-radius: 6px 6px 0px 0px;
-    
+
     svg:last-child {
       transform: rotate(180deg);
     }
@@ -106,11 +112,12 @@
     width: 100%;
     background-color: $white;
     border-radius: 0 0 6px 6px;
-    transform: translateY(-200%);
+    transform: translateY(-150%);
   }
 
   &__catalog-list--active {
     transform: translateY(0);
+    z-index: 5;
   }
 
   &__catalog-item:not(:last-child) {
@@ -149,22 +156,23 @@
     }
   }
 
+  &__search-form {
+    width: 580px;
+  }
   &__search-input {
-    width: 576px;
+    max-width: 418px;
+    width: 100%;
     height: 50px;
     border: none;
-    border-radius: 6px;
-    padding: 15px 180px 15px 50px;
-    bottom: 30px;
-    left: 15px;
+    border-radius: 6px 0 0 6px;
+    padding: 15px 50px;
     color: $dark-800;
   }
 
   &__search-btn {
-    position: absolute;
-    width: 158px;
+    max-width: 158px;
+    width: 100%;
     height: 50px;
-    right: 0;
     border-radius: 0 6px 6px 0;
     border: none;
     background-color: $dark-800;
@@ -172,6 +180,7 @@
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+    transform: translate(-3px, -1px);
     transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
 
     &:hover {
@@ -184,7 +193,7 @@
 
     &:active {
       color: rgba(255, 255, 255, 0.5);
-;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
   }
 }
