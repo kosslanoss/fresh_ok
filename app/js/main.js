@@ -5,4 +5,12 @@ $(function(){
     $('.header-bottom__catalog-btn').toggleClass('header-bottom__catalog-btn--active');
   });
 
+  $('.hero__slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+
 });
