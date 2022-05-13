@@ -1,5 +1,4 @@
 .hero {
-
   .slick-arrow {
     position: absolute;
     z-index: 5;
@@ -13,18 +12,34 @@
     background-position: center;
     background-size: 19 32;
     top: calc(50% - 30px);
+    cursor: pointer;
+    transition: background-image 0.3s, background-color 0.3s, box-shadow 0.3s;
+
+    &:hover {
+      background-color: $green-200;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 3px rgba(99, 166, 14, 0.5);
+    }
   }
 
   .slick-prev {
     background-image: url(../images/icons/arrow-left.svg);
-    left: 0;
-    margin-left: 60px;
+    left: 60px;
+
+    &:hover {
+      background-image: url(../images/icons/arrow-left--green.svg);
+    }
   }
 
   .slick-next {
     background-image: url(../images/icons/arrow-right.svg);
-    right: 0;
-    margin-right: 60px;
+    right: 60px;
+
+    &:hover {
+      background-image: url(../images/icons/arrow-right--green.svg);
+    }
   }
   
   &__item {
