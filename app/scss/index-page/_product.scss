@@ -1,0 +1,232 @@
+.product {
+  &__nav {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__nav-btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $green-900;
+    }
+
+    &:focus {
+      background: rgba(255, 255, 255, 0.0001);
+      box-shadow: 0px 0px 0px 3px #E0EDCF;
+      border-radius: 3px;
+    }
+  }
+
+  .mixitup-control-active {
+    border-bottom: solid 3px rgba(99, 166, 14, 0.2);
+  }
+
+  &__nav-btn:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+}
+
+.product-item {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  height: 409px;
+  border-radius: 6px;
+  border: solid 1px rgba(17, 17, 17, 0.2);
+  background-color: $white;
+  transition: border 0.3s;
+  
+  &:hover {
+    border: solid 1px $green-900;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+  }
+
+  &__badges {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 12px;
+    left: 12px;
+  }
+
+  &__badge {
+    width: 100%;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    padding: 3px 6px;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.03em;
+    border-radius: 6px;
+
+    &--price {
+      max-width: 37px;
+      background-color: $red-900;
+    }
+  
+    &--new {
+      max-width: 66px;
+      background-color: $green-900;
+    }
+  
+    &--hit {
+      max-width: 28px;
+      background-color: $orange-900;
+    }
+  }
+
+  &__badge:not(:last-child) {
+    margin-bottom: 3px;
+  }
+
+  &__favourite-link {
+    position: absolute;
+    z-index: 1;
+    width: 44px;
+    height: 44px;
+    right: 6px;
+    top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s;
+
+    path {
+      transition: fill 0.3s;
+    }
+
+    &:hover {
+      path {
+        fill: $yellow-900;
+      }
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 3px #E0EDCF;
+      border-radius: 3px;
+    }
+
+    &:active {
+      opacity: 50%;
+    }
+  }
+
+  &__image-box {
+    padding-top: 57px;
+    position: relative;
+    
+
+    &:hover{
+      .product-item__image-hover {
+        opacity: 100%;
+      }
+    }
+  }
+
+  &__image-hover {
+    opacity: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/search-green.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: $white;
+      width: 48px;
+      height: 48px;
+      border-radius: 24px;
+      color: $orange-900;
+    }
+  }
+
+  &__text {
+    height: 60px;
+    padding: 0 18px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+
+  &__price {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__price-old {
+    color: $silver-600;
+    text-decoration: line-through;
+  }
+
+  &__price-new {
+    color: $dark-500;
+  }
+
+  &__cart {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 32px;
+  width: 100%;
+  height: 32px;
+  border: solid 3px transparent;
+  border-radius: 6px;
+  background-color: $green-900;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    background-color: $green-800;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+}

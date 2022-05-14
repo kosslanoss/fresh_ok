@@ -55,12 +55,20 @@
   }
   
   &__link {
-    transition: border 0.3s;
     border: solid 3px transparent;
+    transition:  opacity 0.3s, border 0.3s;
+
+    &:hover {
+      opacity: 70%;
+    }
 
     &:focus {
       border: solid 3px $white;
       border-radius: 3px;
+    }
+
+    &:active {
+      color: $green-200;
     }
   }
 }

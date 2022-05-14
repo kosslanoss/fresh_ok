@@ -60,26 +60,46 @@
 
   &__menu-list {
     display: grid;
-    grid-template-columns: 185px 185px 185px;
-  }
-
-  &__menu-item {
-    margin: 9px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px 70px;
   }
 
   &__menu-link {
-    transition: border 0.3s;
     border: solid 3px transparent;
+    transition:  opacity 0.3s, border 0.3s;
+
+    &:hover {
+      opacity: 70%;
+    }
 
     &:focus {
       border: solid 3px $white;
       border-radius: 3px;
+    }
+
+    &:active {
+      color: $green-200;
     }
   }
 
   &__phone {
     margin-bottom: 15px;
     display: block;
+    border: solid 3px transparent;
+    transition:  opacity 0.3s, border 0.3s;
+
+    &:hover {
+      opacity: 70%;
+    }
+
+    &:focus {
+      border: solid 3px $white;
+      border-radius: 3px;
+    }
+
+    &:active {
+      color: $green-200;
+    }
   }
 
   &__address {
