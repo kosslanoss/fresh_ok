@@ -59,9 +59,12 @@
   }
 
   &__menu-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 18px 70px;
+    column-count: 3;
+    column-gap: 75px;
+  }
+
+  &__menu-item {
+    padding: 9px 0;
   }
 
   &__menu-link {
