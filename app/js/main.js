@@ -1,5 +1,10 @@
 $(function(){
 
+  $('.user-nav__search-btn').on('click', function () {
+    $('.search').toggleClass('search--active');
+    $('.user-nav__search-btn').toggleClass('user-nav__search-btn--active');
+  });
+
   $('.header-bottom__catalog-btn').on('click', function(){
     $('.header-bottom__catalog-list').toggleClass('header-bottom__catalog-list--active');
     $('.header-bottom__catalog-btn').toggleClass('header-bottom__catalog-btn--active');
@@ -11,7 +16,16 @@ $(function(){
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true,
-    infinite: false
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1515,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
   });
 
   $('.brands__items').slick({

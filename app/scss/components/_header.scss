@@ -1,5 +1,9 @@
 .header {
   font-family: $open-sans;
+
+  &__search {
+    display: none;
+  }
 }
 
 .header-top {
@@ -73,6 +77,15 @@
   }
 }
 
+.menu {
+  &__btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+}
+
 .header-bottom {
   background-color: $green-900;
   padding: 25px 0;
@@ -83,8 +96,19 @@
     align-items: center;
   }
 
+  .logo {
+    margin-right: 25px;
+    max-width: 200px;
+    width: 100%;
+
+    &__img {
+      display: block;
+    }
+  }
+
   &__catalog {
     position: relative;
+    margin-right: 25px;
   }
 
   &__catalog-btn {
@@ -154,8 +178,10 @@
   }
 
   &__search {
-    position: relative;
     cursor: pointer;
+    margin-right: 25px;
+    max-width: 575px;
+    width: 100%;
 
     svg {
       position: absolute;
@@ -165,19 +191,23 @@
   }
 
   &__search-form {
-    width: 580px;
+    width: 100%;
+    position: relative;
   }
+
   &__search-input {
-    max-width: 418px;
     width: 100%;
     height: 50px;
     border: none;
-    border-radius: 6px 0 0 6px;
-    padding: 15px 50px;
+    border-radius: 6px;
+    padding: 15px 180px 15px 50px;
     color: $dark-800;
   }
 
   &__search-btn {
+    position: absolute;
+    right: -3px;
+    bottom: -1px;
     max-width: 158px;
     width: 100%;
     height: 50px;
@@ -210,6 +240,7 @@
   display: flex;
   align-items: center;
 
+  &__search-btn,
   &__link {
     position: relative;
     width: 50px;
@@ -236,6 +267,21 @@
     }
   }
 
+  &__search-btn {
+    background-color: transparent;
+    border: none;
+    display: none;
+    cursor: pointer;
+    margin-right: 12px;
+    transition: transform 0.3s;
+
+    &--active {
+      path {
+        fill: $yellow-900;
+      }
+    }
+  }
+
   &__link:not(:last-child) {
     margin-right: 12px;
   }
@@ -254,5 +300,59 @@
     right: 28px;
     font-weight: 600;
     font-size: 10px;
+  }
+}
+
+.search {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .header-top {
+    &__address-item {
+      padding-right: 0;
+    }
+
+    &__address-item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__address-link {
+      span {
+        display: none;
+      }
+    }
+
+    &__nav {
+      display: none;
+    }
+  }
+
+  .menu {
+    &__btn {
+      display: flex;
+    }
+  }
+
+  .user-nav {
+    &__search-btn {
+      display: block;
+    }
+
+    &__link-login {
+      display: none;
+    }
+  }
+
+  .header-bottom {
+    &__search {
+      display: none;
+    }
+  }
+
+  .search {
+    &--active {
+      display: flex;
+    }  
   }
 }

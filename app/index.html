@@ -17,6 +17,13 @@
     <div class="header-top">
       <div class="container">
         <div class="header-top__wrapper">
+          <button class="menu__btn">
+            <svg width="30" height="22" viewBox="0 0 30 22" fill="none">
+              <line y1="1" x2="30" y2="1" stroke="white" stroke-width="2" />
+              <line y1="11" x2="30" y2="11" stroke="white" stroke-width="2" />
+              <line y1="21" x2="30" y2="21" stroke="white" stroke-width="2" />
+            </svg>
+          </button>
           <ul class="header-top__address-list">
             <li class="header-top__address-item">
               <a class="header-top__address-link" href="#">
@@ -37,7 +44,9 @@
                     d="M26.8762 11.6357H25.9045C25.6238 11.6357 25.3965 11.863 25.3965 12.1438V15.6992C25.3965 15.98 25.6238 16.2073 25.9045 16.2073H29.3231C29.6416 16.2073 29.9267 16.0425 30.0866 15.7673C30.2465 15.492 30.2467 15.1624 30.0892 14.8878L28.9031 12.8117C28.4889 12.0868 27.712 11.6357 26.8762 11.6357ZM26.4126 15.1915V12.6518H26.8762C27.3484 12.6518 27.787 12.9062 28.021 13.316L29.0926 15.1915H26.4126Z"
                     fill="white" />
                 </svg>
-                Адреса і час доставки
+                <span>
+                  Адреса і час доставки
+                </span>
               </a>
             </li>
             <li class="header-top__address-item">
@@ -53,7 +62,9 @@
                     d="M12.7475 6.30376C13.3847 6.37717 14.2665 6.84981 14.8442 7.42749C15.4268 8.0102 15.9004 8.90045 15.9701 9.5445C16.0083 9.89592 16.3054 10.1563 16.6509 10.1563C16.6756 10.1563 16.7006 10.1549 16.7256 10.1523C17.1021 10.1114 17.3743 9.77314 17.3334 9.39667C17.2142 8.29708 16.4842 7.12827 15.8137 6.4578C15.1493 5.79327 13.9919 5.06676 12.9043 4.94142C12.5277 4.89763 12.188 5.16796 12.1447 5.54406C12.1014 5.92025 12.3713 6.26042 12.7475 6.30376Z"
                     fill="white" />
                 </svg>
-                Гаряча лінія 24/7
+                <span>
+                  Гаряча лінія 24/7
+                </span>
               </a>
             </li>
           </ul>
@@ -177,8 +188,15 @@
             </form>
           </div>
           <div class="user-nav">
-            <a class="user-nav__link" href="#">
-              <svg width="25" height="32" viewBox="0 0 25 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="user-nav__search-btn" type="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M9.89063 19.7657C4.43691 19.7657 0 15.3321 0 9.88259C0 4.43303 4.43691 -0.000488281 9.89063 -0.000488281C15.3443 -0.000488281 19.7813 4.43303 19.7813 9.88259C19.7813 15.3321 15.3443 19.7657 9.89063 19.7657ZM9.89063 1.87308C5.47078 1.87308 1.875 5.46612 1.875 9.88259C1.875 14.2991 5.47078 17.8921 9.89063 17.8921C14.3105 17.8921 17.9063 14.2991 17.9063 9.88259C17.9063 5.46612 14.3105 1.87308 9.89063 1.87308ZM23.7255 23.7252C24.0916 23.3593 24.0916 22.7661 23.7255 22.4003L19.5301 18.2082C19.164 17.8424 18.5704 17.8424 18.2043 18.2082C17.8382 18.5741 17.8382 19.1672 18.2043 19.5331L22.3996 23.7252C22.5826 23.9081 22.8226 23.9995 23.0626 23.9995C23.3025 23.9995 23.5424 23.9081 23.7255 23.7252Z"
+                  fill="white" />
+              </svg>
+            </button>
+            <a class="user-nav__link user-nav__link-login" href="#">
+              <svg width="25" height="32" viewBox="0 0 25 32" fill="none">
                 <path
                   d="M22.6785 19.9427C21.6076 18.3799 20.213 17.0955 18.5934 16.1643C20.4901 14.467 21.686 12.0018 21.686 9.26225C21.6861 4.15505 17.5311 0 12.4238 0C7.31656 0 3.1615 4.15505 3.1615 9.26225C3.1615 12.0018 4.35743 14.4669 6.25416 16.1643C4.63447 17.0956 3.23995 18.3799 2.16902 19.9427C0.750061 22.0134 0 24.4315 0 26.9359V32H24.8476V26.9359C24.8477 24.4315 24.0976 22.0133 22.6785 19.9427ZM5.10099 9.26225C5.10099 5.22444 8.38604 1.93939 12.4239 1.93939C16.4617 1.93939 19.7467 5.22444 19.7467 9.26225C19.7467 13.3002 16.4617 16.5852 12.4239 16.5852C8.38604 16.5852 5.10099 13.3002 5.10099 9.26225ZM1.93939 30.0606V26.9359C1.93939 22.8273 4.31922 19.1418 8.04034 17.4197C9.34604 18.1242 10.839 18.5245 12.4238 18.5245C14.0085 18.5245 15.5015 18.1241 16.8072 17.4197C20.5284 19.1417 22.9081 22.8273 22.9081 26.9359V30.0606H1.93939Z"
                   fill="white" />
@@ -210,12 +228,25 @@
         </div>
       </div>
     </div>
+    <div class="search">
+      <form class="search__form" action="#">
+        <label class="search__label">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.02099 16.4718C4.47623 16.4718 0.778809 12.7772 0.778809 8.23588C0.778809 3.69459 4.47623 0 9.02099 0C13.5657 0 17.2632 3.69459 17.2632 8.23588C17.2632 12.7772 13.5657 16.4718 9.02099 16.4718ZM9.02099 1.5613C5.33779 1.5613 2.34131 4.5555 2.34131 8.23588C2.34131 11.9163 5.33779 14.9105 9.02099 14.9105C12.7042 14.9105 15.7007 11.9163 15.7007 8.23588C15.7007 4.5555 12.7042 1.5613 9.02099 1.5613ZM20.55 19.7713C20.8551 19.4665 20.8551 18.9722 20.55 18.6673L17.0539 15.1739C16.7488 14.869 16.2541 14.869 15.949 15.1739C15.6439 15.4788 15.6439 15.9731 15.949 16.2779L19.4451 19.7713C19.5977 19.9238 19.7976 20 19.9976 20C20.1975 20 20.3974 19.9238 20.55 19.7713Z"
+              fill="#31352B" />
+          </svg>
+          <input class="search__input" type="text" name="search" placeholder="Знайти у магазині ...">
+        </label>
+        <button class="search__btn" type="button">Знайти</button>
+      </form>
+    </div>
   </header>
   <main class="main">
     <h1 class="sr-only">
       Фрешок - це інтернет магазин зі швидкою доставкою і свіжими продуктами.
     </h1>
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="hero__slider">
         <div class="hero__item" style="background-image: url(../images/bg-1.jpg);">
           <div class="container">
@@ -297,8 +328,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="services">
+    </section> -->
+    <!-- <section class="services">
       <h2 class="sr-only">
         Безкоштовна доставка при замовленні від 500₴. Повернення товару якщо його зіпсовано. Цілодобова підтримка нашими
         операторами.
@@ -331,8 +362,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="product section">
+    </section> -->
+    <!-- <section class="product section">
       <div class="container">
         <h3 class="title">
           Топові товари
@@ -359,7 +390,6 @@
             <div class="badges">
               <div class="badge badge--new">Новинка</div>
               <div class="badge badge--price">-50%</div>
-              <!-- <div class="badge badge--hit">Хіт</div> -->
             </div>
             <a class="product-item__favourite-link" href="#">
               <svg width="32" height="29" viewBox="0 0 32 29" fill="none">
@@ -681,8 +711,8 @@
           Показати ще
         </a>
       </div>
-    </section>
-    <section class="banners">
+    </section> -->
+    <!-- <section class="banners">
       <div class="container">
         <ul class="banners__wrapper">
           <li class="banners__item banners__item--big" style="background-image: url(images/banners/banner-1.jpg);"
@@ -737,8 +767,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="promo section">
+    </section> -->
+    <!-- <section class="promo section">
       <div class="container">
         <h3 class="title">
           Акції
@@ -758,8 +788,6 @@
           <div class="promo-item mix category-n">
             <div class="badges">
               <div class="badge badge--new">Новинка</div>
-              <!-- <div class="badge badge--price">-50%</div> -->
-              <!-- <div class="badge badge--hit">Хіт</div> -->
             </div>
             <img class="product-item__image" src="images/product/pineapple.jpg" alt="продукт" width="100" height="100">
             <div class="promo-item__info">
@@ -770,8 +798,6 @@
               </div>
               <div class="reality">
                 <div class="reality reality--in-stock">В наявності</div>
-                <!-- <div class="reality reality--ends">Закінчується</div> -->
-                <!-- <div class="reality reality--not-available">Немає в наявності</div> -->
               </div>
             </div>
             <div class="promo-item__price price">
@@ -782,8 +808,6 @@
               <div class="promo-item__rating-num">
                 4.8
               </div>
-              <!-- <div class="promo-item-rating-star star" data-rateyo-rating="4.8">
-              </div> -->
             </div>
           </div>
           <div class="promo-item mix category-n">
@@ -809,8 +833,6 @@
               <div class="promo-item__rating-num">
                 4.8
               </div>
-              <!-- <div class="promo-item-rating-star star" data-rateyo-rating="4.8">
-              </div> -->
             </div>
           </div>
           <div class="promo-item mix category-n">
@@ -836,8 +858,6 @@
               <div class="promo-item__rating-num">
                 4.8
               </div>
-              <!-- <div class="promo-item-rating-star star" data-rateyo-rating="4.8">
-              </div> -->
             </div>
           </div>
           <div class="promo-item mix category-n">
@@ -863,8 +883,6 @@
               <div class="promo-item__rating-num">
                 4.8
               </div>
-              <!-- <div class="promo-item-rating-star star" data-rateyo-rating="4.8">
-              </div> -->
             </div>
           </div>
           <div class="promo-item mix category-n">
@@ -890,8 +908,6 @@
               <div class="promo-item__rating-num">
                 4.8
               </div>
-              <!-- <div class="promo-item-rating-star star" data-rateyo-rating="4.8">
-              </div> -->
             </div>
           </div>
           <div class="promo-item mix category-h">
@@ -917,8 +933,6 @@
               <div class="promo-item__rating-num">
                 5
               </div>
-              <!-- <div class="promo-item-rating-star star" data-rateyo-rating="5">
-              </div> -->
             </div>
           </div>
           <div class="promo-item mix category-h">
@@ -944,8 +958,6 @@
               <div class="promo-item__rating-num">
                 4.8
               </div>
-              <!-- <div class="promo-item-rating-star star" data-rateyo-rating="4.8">
-              </div> -->
             </div>
           </div>
           <div class="promo-item mix category-h">
@@ -971,8 +983,6 @@
               <div class="promo-item__rating-num">
                 4.8
               </div>
-              <!-- <div class="promo-item-rating-star star" data-rateyo-rating="4.8">
-              </div> -->
             </div>
           </div>
         </div>
@@ -980,8 +990,8 @@
           Показати ще
         </a>
       </div>
-    </section>
-    <section class="brands">
+    </section> -->
+    <!-- <section class="brands">
       <div class="container">
         <div class="brands__slider">
           <ul class="brands__items">
@@ -1015,8 +1025,8 @@
           </ul>
         </div>
       </div>
-    </section>
-    <section class="news section">
+    </section> -->
+    <!-- <section class="news section">
       <div class="container">
         <div class="news__top">
           <h3 class="title">
@@ -1061,7 +1071,7 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <footer class="footer">
     <div class="footer-top">
