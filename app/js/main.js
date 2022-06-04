@@ -1,5 +1,20 @@
 $(function(){
 
+  $('.menu__btn').on('click', function () {
+    $('.header-menu').toggleClass('header-menu--active');
+    $('body').css('background-color', 'rgba(0, 0, 0, 0.15)');
+  });
+
+  $('.button-close').on('click', function () {
+    $('.header-menu').removeClass('header-menu--active');
+    $('body').css('background-color', '#fff');
+  });
+
+  $('.user-nav__search-btn').on('click', function () {
+    $('.search').toggleClass('search--active');
+    $('.user-nav__search-btn').toggleClass('user-nav__search-btn--active');
+  });
+
   $('.header-bottom__catalog-btn').on('click', function(){
     $('.header-bottom__catalog-list').toggleClass('header-bottom__catalog-list--active');
     $('.header-bottom__catalog-btn').toggleClass('header-bottom__catalog-btn--active');
@@ -11,7 +26,16 @@ $(function(){
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true,
-    infinite: false
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
   });
 
   $('.brands__items').slick({
