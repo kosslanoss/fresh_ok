@@ -1,5 +1,15 @@
 $(function(){
 
+  $('.menu__btn').on('click', function () {
+    $('.header-menu').toggleClass('header-menu--active');
+    $('body').css('background-color', 'rgba(0, 0, 0, 0.15)');
+  });
+
+  $('.button-close').on('click', function () {
+    $('.header-menu').removeClass('header-menu--active');
+    $('body').css('background-color', '#fff');
+  });
+
   $('.user-nav__search-btn').on('click', function () {
     $('.search').toggleClass('search--active');
     $('.user-nav__search-btn').toggleClass('user-nav__search-btn--active');
