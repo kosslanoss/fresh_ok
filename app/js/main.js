@@ -29,7 +29,7 @@ $(function(){
     infinite: false,
     responsive: [
       {
-        breakpoint: 1290,
+        breakpoint: 1420,
         settings: {
           arrows: false,
           dots: true
