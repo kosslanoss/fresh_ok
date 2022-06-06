@@ -42,7 +42,33 @@ $(function(){
     infinite: true,
     arrows: false,
     slidesToShow: 6,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 5
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
   });
 
   var mixer = mixitup('.product__items');
