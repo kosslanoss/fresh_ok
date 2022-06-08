@@ -2,11 +2,12 @@ $(function(){
 
   $('.menu__btn').on('click', function () {
     $('.header-menu').toggleClass('header-menu--active');
-    $('body').css('background-color', 'rgba(0, 0, 0, 0.15)');
+    $('.header').addClass('header--dark');
   });
 
   $('.button-close').on('click', function () {
     $('.header-menu').removeClass('header-menu--active');
+    $('.header').removeClass('header--dark');
     $('body').css('background-color', '#fff');
   });
 
